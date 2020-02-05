@@ -33,6 +33,16 @@ print(grades.tail())
 
 
 
+## Objectives
+
+##Find an average grade
+
+average_grade = grades["final_grade"].mean()
+print("AVERAGE GRADE: ", average_grade)
+
+
+##Loop through all rows
+#Use for loop
 
 
 
