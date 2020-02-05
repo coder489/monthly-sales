@@ -52,3 +52,19 @@ for index, row in grades.iterrows():
     print("-------")
     #my_grades.append(rows["final_grade"])
 
+
+
+##Convert pandas into list of dictionaries
+####Then you don't use pandas
+
+grades_list = grades.to_dict("records")
+print(type(grades_list))
+print(grades_list)
+
+grades_list = []
+
+pring("Average Grades", avg(grades_list))
+
+just_grades = [float(d["final_grade"])for d in grades_list] 
+print(type(just_grades))
+print(just_grades[0])
